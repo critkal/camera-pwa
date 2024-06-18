@@ -1,0 +1,10 @@
+{
+  "name": "camera-pwa",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "http-server -S -C PATH_TO_PEM -K PATH_TO_KEY"
+  },
+  "dependencies": {
+    "http-server": "^14.1.1"
+  }
+}

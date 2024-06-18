@@ -1,0 +1,16 @@
+{
+  "name": "Camera PWA",
+  "short_name": "Camera",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#000000",
+  "description": "A PWA for taking and saving photos",
+  "icons": [
+    {
+      "src": "icon.jpg",
+      "type": "image/png",
+      "sizes": "450x450"
+    }
+  ],
+  "theme_color": "#000000"
+}
