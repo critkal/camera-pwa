@@ -2,6 +2,7 @@ const video = document.getElementById('video');
 const canvas = document.getElementById('canvas');
 const snap = document.getElementById('snap');
 const save = document.getElementById('save');
+const upload = document.getElementById('upload');
 
 // Get access to the camera
 async function startCamera() {
@@ -22,6 +23,17 @@ snap.addEventListener('click', () => {
     canvas.getContext('2d').drawImage(video, 0, 0);
     save.style.display = 'block';
 });
+
+upload.addEventListener('change', (event) => {
+    const filePicker = document.querySelector('input');
+    if (!filePicker || !filePicker.files 
+        || filePicker.files.length <= 0) {
+        reject('No file selected.');
+        return;
+    }
+    const myFile = filePicker.files[0];
+    console.log(myFile);
+})
 
 // Save the photo
 save.addEventListener('click', async () => {
